@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BootdiskMaker"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Boot Disk Maker" Height="350" Width="525">
     <Grid>
-        
+        <Label x:Name="label" Content="USB drives" HorizontalAlignment="Left" Margin="36,41,0,0" VerticalAlignment="Top" Width="71"/>
+        <ComboBox x:Name="USB_DRV_LST" HorizontalAlignment="Left" Margin="124,45,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.492,-0.295"/>
+        <Button x:Name="button" Content="Refresh" HorizontalAlignment="Left" Margin="268,44,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <Label x:Name="label1" Content="ISO file" HorizontalAlignment="Left" Margin="36,82,0,0" VerticalAlignment="Top" Width="71"/>
+        <TextBox x:Name="ISO_file" HorizontalAlignment="Left" Height="23" Margin="124,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="269"/>
+        <Button x:Name="Browse_BTN" Content="Browse" HorizontalAlignment="Left" Margin="419,88,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.11,-0.308" Click="Browse_BTN_Click"/>
+
     </Grid>
 </Window>
